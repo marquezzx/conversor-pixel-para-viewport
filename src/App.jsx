@@ -13,18 +13,6 @@ export function App() {
   const vwToPixel = (value) => {
     return $("#vwToPixel").html(`Resultado = <b>${((1920 * value) / 100)}px</b>`)
   }
-
-  window.addEventListener('resize', updateValues)
-  function updateValues() {
-    const pixelToVHValue = $('#pixelToVH').val()
-    const pixelToVWValue = $('#pixelToVW').val()
-    const vhToPixelValue = $('#vhToPixel').val()
-    const vwToPixelValue = $('#vwToPixel').val()
-    pixelToVH(pixelToVHValue)
-    pixelToVW(pixelToVWValue)
-    vhToPixel(vhToPixelValue)
-    vwToPixel(vwToPixelValue)
-  }
   return (
     <>
       <S.GlobalStyle/>
