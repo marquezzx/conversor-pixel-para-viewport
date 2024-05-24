@@ -1,17 +1,17 @@
 import * as S from './style.js'
 
 export function App() {
-  const pixelToVH = (value) => {
-    return $("#pixelToVH").html(`Resultado = <b>${(100 * value) / 1080}vh</b>`)
+    const pixelToVH = (value) => {
+    return $("#pixelToVH").html(`Resultado = <b>${((100 * value) / 1080).toFixed(3)}vh</b>`)
   }
   const pixelToVW = (value) => {
-    return $("#pixelToVW").html(`Resultado = <b>${(100 * value) / 1920}vw</b>`)
+    return $("#pixelToVW").html(`Resultado = <b>${((100 * value) / 1920).toFixed(3)}vw</b>`)
   }
   const vhToPixel = (value) => {
-    return $("#vhToPixel").html(`Resultado = <b>${(1080 * value) / 100}px</b>`)
+    return $("#vhToPixel").html(`Resultado = <b>${((1080 * value) / 100).toFixed(3)}px</b>`)
   }
   const vwToPixel = (value) => {
-    return $("#vwToPixel").html(`Resultado = <b>${((1920 * value) / 100)}px</b>`)
+    return $("#vwToPixel").html(`Resultado = <b>${((1920 * value) / 100).toFixed(3)}px</b>`)
   }
   return (
     <>
