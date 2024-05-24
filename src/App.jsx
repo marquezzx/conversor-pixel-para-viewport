@@ -2,16 +2,16 @@ import * as S from './style.js'
 
 export function App() {
   const pixelToVH = (value) => {
-    return $("#pixelToVH").html(`Resultado = <b>${(100 * value) / window.innerHeight}vh</b>`)
+    return $("#pixelToVH").html(`Resultado = <b>${(100 * value) / 1080}vh</b>`)
   }
   const pixelToVW = (value) => {
-    return $("#pixelToVW").html(`Resultado = <b>${(100 * value) / window.innerWidth}vw</b>`)
+    return $("#pixelToVW").html(`Resultado = <b>${(100 * value) / 1920}vw</b>`)
   }
   const vhToPixel = (value) => {
-    return $("#vhToPixel").html(`Resultado = <b>${(window.innerHeight * value) / 100}px</b>`)
+    return $("#vhToPixel").html(`Resultado = <b>${(1080 * value) / 100}px</b>`)
   }
   const vwToPixel = (value) => {
-    return $("#vwToPixel").html(`Resultado = <b>${((window.innerWidth * value) / 100)}px</b>`)
+    return $("#vwToPixel").html(`Resultado = <b>${((1920 * value) / 100)}px</b>`)
   }
 
   window.addEventListener('resize', updateValues)
